@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
+// import dotenv from 'dotenv';
 import App from './components/App';
 import Firebase, { FirebaseContext } from './components/Firebase';
 
 import * as serviceWorker from './serviceWorker';
+// require('dotenv').config();
+// dotenv.config();
 
 ReactDOM.render(
   <FirebaseContext.Provider value={new Firebase()}>
